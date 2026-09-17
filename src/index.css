@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: font1;
+  src: url(../public/Fonts/OFL.txt);
+}
+
+*{
+  font-family: font1;
+}
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  15% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  85% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+}
+
+.animate-fade {
+  animation: fadeSlide 5s ease-in-out infinite;
+}
